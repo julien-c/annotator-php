@@ -1,6 +1,7 @@
 <?php
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -76,6 +77,20 @@ $app->get('/annotations/{id}', function ($id) use ($app) {
 	unset($post['_id']);
 	
 	return $app->json($post);
+});
+
+
+$app->put('/annotations/{id}', function (Request $request, $id) use ($app) {
+	$post = $app['data'];
+	unset($post['id']);
+	
+	$m = new Mongo();
+	$m->annotator->annotations->update(
+		array('_id' => new MongoId($id)),
+		$post
+	);
+	
+	return new Response('', 303, array('Location' => $request->getUri()));
 });
 
 
