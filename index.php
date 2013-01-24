@@ -40,6 +40,16 @@ $app->get('/', function () use ($app) {
 
 $app->get('/annotations', function () use ($app) {
 	$out = array();
+	
+	$m = new Mongo();
+	$c = $m->annotator->annotations->find();
+	
+	foreach($c as $post) {
+		$post['id'] = (string) $post['_id'];
+		unset($post['_id']);
+		$out[] = $post;
+	}
+	
 	return $app->json($out);
 });
 
