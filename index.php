@@ -30,9 +30,9 @@ $app->before(function (Request $request) use ($app) {
 
 $app->get('/', function () use ($app) {
 	$out = array(
-		'name' => "Annotator Store API (PHP)",
+		'name'    => "Annotator Store API (PHP)",
 		'version' => '1.0.0',
-		'author' => 'julien-c'
+		'author'  => 'julien-c'
 	);
 	return $app->json($out);
 });
