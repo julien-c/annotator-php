@@ -94,6 +94,17 @@ $app->put('/annotations/{id}', function (Request $request, $id) use ($app) {
 });
 
 
+$app->delete('/annotations/{id}', function (Request $request, $id) use ($app) {
+	
+	$m = new Mongo();
+	$m->annotator->annotations->remove(
+		array('_id' => new MongoId($id))
+	);
+	
+	return new Response('', 204);
+});
+
+
 /***
  *
  * Run, App, Run!
