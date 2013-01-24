@@ -87,7 +87,7 @@ $app->put('/annotations/{id}', function (Request $request, $id) use ($app) {
 	$m = new Mongo();
 	$m->annotator->annotations->update(
 		array('_id' => new MongoId($id)),
-		$post
+		array('$set' => $post)
 	);
 	
 	return new Response('', 303, array('Location' => $request->getUri()));
