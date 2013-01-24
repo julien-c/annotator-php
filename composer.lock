@@ -1,6 +1,48 @@
 {
-    "hash": "3897c43dd2468b78d7bf01cfa3d331bd",
+    "hash": "55b2f7b8a8092b16a3a4978039288c48",
     "packages": [
+        {
+            "name": "f21/jwt",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/F21/jwt.git",
+                "reference": "4ffeb949b1298b6d213590c759db8d8cdeee3abe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/F21/jwt/archive/4ffeb949b1298b6d213590c759db8d8cdeee3abe.zip",
+                "reference": "4ffeb949b1298b6d213590c759db8d8cdeee3abe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-01-11 06:03:54",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "jwt": "/JWT"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Francis Chuang",
+                    "email": "francis.chuang@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JWT (JSON Web Tokens) for PHP",
+            "homepage": "https://github.com/F21/jwt",
+            "keywords": [
+                "jwt",
+                "json web tokens"
+            ]
+        },
         {
             "name": "pimple/pimple",
             "version": "dev-master",
@@ -91,12 +133,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "c1bf812c4a5c335f0d8489ae4ca9e5f42a7d7a24"
+                "reference": "f7a8956f96e991f86a5fc4811876bef76e3a4e25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Silex/archive/c1bf812c4a5c335f0d8489ae4ca9e5f42a7d7a24.zip",
-                "reference": "c1bf812c4a5c335f0d8489ae4ca9e5f42a7d7a24",
+                "url": "https://github.com/fabpot/Silex/archive/f7a8956f96e991f86a5fc4811876bef76e3a4e25.zip",
+                "reference": "f7a8956f96e991f86a5fc4811876bef76e3a4e25",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +174,7 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-01-24 08:46:05",
+            "time": "2013-01-24 12:18:41",
             "type": "library",
             "extra": {
                 "branch-alias": {

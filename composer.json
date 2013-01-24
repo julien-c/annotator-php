@@ -9,7 +9,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "silex/silex": "1.0.*@dev"
+        "silex/silex": "1.0.*@dev",
+        "f21/jwt": "*"
 
     }
 }

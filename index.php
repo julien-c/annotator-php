@@ -4,6 +4,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/config.php';
 
 $app = new Silex\Application();
 
@@ -102,6 +103,29 @@ $app->delete('/annotations/{id}', function (Request $request, $id) use ($app) {
 	);
 	
 	return new Response('', 204);
+});
+
+
+/***
+ *
+ * Auth Endpoint.
+ * @see https://github.com/okfn/annotator/wiki/Authentication
+ *
+ */
+
+
+$app->get('/auth/token', function () use ($app) {
+	$jwt = jwt::encode(
+		array(
+			'consumerKey' => CONSUMER_KEY,
+			'userId'      => USER_ID,
+			'issuedAt'    => time(),
+			'ttl'         => CONSUMER_TTL
+		), 
+		CONSUMER_SECRET
+	);
+	
+	return new Response($jwt);
 });
 
 
