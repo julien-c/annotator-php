@@ -67,6 +67,18 @@ $app->post('/annotations', function () use ($app) {
 });
 
 
+$app->get('/annotations/{id}', function ($id) use ($app) {
+	
+	$m = new Mongo();
+	$post = $m->annotator->annotations->findOne(array('_id' => new MongoId($id)));
+	
+	$post['id'] = (string) $post['_id'];
+	unset($post['_id']);
+	
+	return $app->json($post);
+});
+
+
 /***
  *
  * Run, App, Run!
