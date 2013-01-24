@@ -1,0 +1,14 @@
+{
+    "name": "julien-c/annotator-php",
+    "description": "Annotator store built on Silex and MongoDB",
+    "authors": [
+        {
+            "name": "Julien Chaumond",
+            "email": "chaumond@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
