@@ -7,22 +7,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/F21/jwt.git",
-                "reference": "4ffeb949b1298b6d213590c759db8d8cdeee3abe"
+                "reference": "f9dde44546b1e316d839773092eff7daf4a575b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/F21/jwt/archive/4ffeb949b1298b6d213590c759db8d8cdeee3abe.zip",
-                "reference": "4ffeb949b1298b6d213590c759db8d8cdeee3abe",
+                "url": "https://github.com/F21/jwt/archive/f9dde44546b1e316d839773092eff7daf4a575b5.zip",
+                "reference": "f9dde44546b1e316d839773092eff7daf4a575b5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2013-01-11 06:03:54",
+            "time": "2013-01-25 00:09:04",
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "jwt": "/JWT"
+                    "JWT": "JWT/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -133,12 +133,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "f7a8956f96e991f86a5fc4811876bef76e3a4e25"
+                "reference": "a23c221e609a17dfc2923066e1680149b7678cf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Silex/archive/f7a8956f96e991f86a5fc4811876bef76e3a4e25.zip",
-                "reference": "f7a8956f96e991f86a5fc4811876bef76e3a4e25",
+                "url": "https://github.com/fabpot/Silex/archive/a23c221e609a17dfc2923066e1680149b7678cf9.zip",
+                "reference": "a23c221e609a17dfc2923066e1680149b7678cf9",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +174,7 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-01-24 12:18:41",
+            "time": "2013-01-25 06:59:19",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -318,12 +318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "82fce0a7efbb692166ef98381646929cbed4ab73"
+                "reference": "613bbbe8efd8e789e73dc86973e9fd742dace832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/archive/82fce0a7efbb692166ef98381646929cbed4ab73.zip",
-                "reference": "82fce0a7efbb692166ef98381646929cbed4ab73",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/613bbbe8efd8e789e73dc86973e9fd742dace832",
+                "reference": "613bbbe8efd8e789e73dc86973e9fd742dace832",
                 "shasum": ""
             },
             "require": {
@@ -351,7 +351,7 @@
                 "symfony/dependency-injection": "2.2.*",
                 "symfony/finder": "2.2.*"
             },
-            "time": "2013-01-24 08:14:41",
+            "time": "2013-01-31 08:00:54",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -387,12 +387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "v2.2.0-BETA2"
+                "reference": "de9d64780254f45cfa9d9e49602d0a63acf45f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/archive/v2.2.0-BETA2.zip",
-                "reference": "v2.2.0-BETA2",
+                "url": "https://github.com/symfony/Routing/archive/de9d64780254f45cfa9d9e49602d0a63acf45f75.zip",
+                "reference": "de9d64780254f45cfa9d9e49602d0a63acf45f75",
                 "shasum": ""
             },
             "require": {
@@ -410,7 +410,7 @@
                 "symfony/config": "2.2.*",
                 "symfony/yaml": "2.2.*"
             },
-            "time": "2013-01-21 16:57:32",
+            "time": "2013-01-28 09:55:07",
             "type": "library",
             "extra": {
                 "branch-alias": {
