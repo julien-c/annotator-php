@@ -10,3 +10,8 @@ Currently implements:
  * the Authentication API (work-in-progress)
  * but NOT the Search API
  
+#### How to install
+
+ * `composer install`
+ * `cp config.php.sample config.php`
+ 
